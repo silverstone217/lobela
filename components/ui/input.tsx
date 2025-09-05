@@ -22,7 +22,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           type={type}
           ref={ref}
           className={cn(
-            "w-full px-4 py-3 rounded-2xl bg-background border-2 border-foreground/20",
+            "w-full px-4 py-3 rounded-xl bg-background border-2 border-foreground/20",
             "text-foreground placeholder:text-foreground/40 font-medium",
             "focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/50",
             "transition-all duration-200 shadow-inner",

@@ -23,9 +23,9 @@ export default function MobileLayout({
   }, [pathname]);
 
   return (
-    <div className="flex flex-col h-screen w-screen ">
+    <div className="flex flex-col h-[100dvh] w-screen ">
       {/* Contenu */}
-      <div className="flex-1 overflow-hidden">{children}</div>
+      <div className="flex-1 overflow-x-hidden overflow-y-auto">{children}</div>
 
       {/* Barre de navigation en bas */}
       {!isAuthPage && (
@@ -37,14 +37,12 @@ export default function MobileLayout({
             <Link key={href} href={href} className="flex flex-col items-center">
               <Icon
                 className={`h-6 w-6 ${
-                  pathname === href ? "text-pink-500" : "text-gray-400"
+                  pathname === href ? "text-primary" : "text-gray-400"
                 }`}
               />
               <span
                 className={`text-xs ${
-                  pathname === href
-                    ? "text-pink-500 font-bold"
-                    : "text-gray-400"
+                  pathname === href ? "text-primary font-bold" : "text-gray-400"
                 }`}
               >
                 {label}

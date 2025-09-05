@@ -34,7 +34,7 @@ export const Avatar = ({ name, image, size = "md" }: AvatarProps) => {
         rounded-full 
         bg-secondary/30 
        
-        shadow-lg 
+        shadow 
         flex items-center justify-center 
         overflow-hidden
         relative
